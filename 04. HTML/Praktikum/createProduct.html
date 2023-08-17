@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Produk</title>
+    <style>
+        .required {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Create Product</h1>
+        <h2>Detail Product</h2>
+    </div>
+    <div>
+        <p>Product Name: </p>
+        <input type="text" name="Nama" pattern=".{6,50}" required>
+        <span class="required">*</span>
+    </div>
+    <div>
+        <p>Product Category: </p>
+        <select name="Product Category" id="Product Category">
+            <option value="Electronic">Electronic</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Foods">Foods</option>
+            <option value="Home Appliances">Home Appliances</option>
+            <option value="Kids">Kids & Baby</option>
+        </select>
+    </div>
+    <div>
+        <p>Product Freshness: </p>
+        <input type="radio" name="Freshness" id="Brand New" required><label for="">Brand New</label><br>
+        <input type="radio" name="Freshness" id="Second Hand" required><label for="">Second Hand</label><br>
+        <input type="radio" name="Freshness" id="Refurbished" required><label for="">Refurbished</label>
+        <span class="required">*</span>
+    </div>
+    <div>
+        <p>Image of Product <input type="file" name="" id=""></p>
+    </div>
+    <div>
+        <p>Additional Description</p>
+        <textarea cols="30" rows="10" name="Desc" required></textarea>
+        <span class="required">*</span>
+    </div>
+    <div>
+        <p>Product Price: </p>
+        <input type="text" name="Product Price" id="Price" placeholder="$ 100" pattern="\d+" required>
+        <span class="required">*</span>
+    </div> <br>
+    <div>
+        <input type="submit" value="Submit">
+    </div> <br><br><br>
+    <div>
+        <a href="landingPage.html" target="_blank">Ke Landing Page</a>
+    </div>
+</body>
+</html>
