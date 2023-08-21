@@ -17,12 +17,11 @@
         <h2>Detail Product</h2>
     </div>
     <div>
-        <p>Product Name: </p>
+        <p>Product Name:<span class="required">*</span></p>
         <input type="text" name="Nama" pattern=".{6,50}" required>
-        <span class="required">*</span>
     </div>
     <div>
-        <p>Product Category: </p>
+        <p>Product Category:<span class="required">*</span> </p>
         <select name="Product Category" id="Product Category">
             <option value="Electronic">Electronic</option>
             <option value="Fashion">Fashion</option>
@@ -32,24 +31,21 @@
         </select>
     </div>
     <div>
-        <p>Product Freshness: </p>
+        <p>Product Freshness:<span class="required">*</span> </p>
         <input type="radio" name="Freshness" id="Brand New" required><label for="">Brand New</label><br>
         <input type="radio" name="Freshness" id="Second Hand" required><label for="">Second Hand</label><br>
         <input type="radio" name="Freshness" id="Refurbished" required><label for="">Refurbished</label>
-        <span class="required">*</span>
     </div>
     <div>
         <p>Image of Product <input type="file" name="" id=""></p>
     </div>
     <div>
-        <p>Additional Description</p>
+        <p>Additional Description:<span class="required">*</span></p>
         <textarea cols="30" rows="10" name="Desc" required></textarea>
-        <span class="required">*</span>
     </div>
     <div>
-        <p>Product Price: </p>
+        <p>Product Price:<span class="required">*</span></p>
         <input type="text" name="Product Price" id="Price" placeholder="$ 100" pattern="\d+" required>
-        <span class="required">*</span>
     </div> <br>
     <div>
         <input type="submit" value="Submit">
