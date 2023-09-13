@@ -1,0 +1,7 @@
+<h1 align = "center"><b>Resume Section11 (React Fundamental)</b></h1>
+
+<ul>
+    <li>React Fundamentals adalah pemahaman dasar atau konsep dasar yang penting dalam pengembangan aplikasi menggunakan React. Ini mencakup pengetahuan dasar tentang cara React bekerja, konsep-konsep kunci, dan prinsip-prinsip yang perlu dipahami oleh pengembang yang ingin menggunakan React secara efektif.</li>
+    <li>JSX adalah ekstensi sintaksis JavaScript yang memungkinkan penulisan kode HTML-terlihat di dalam JavaScript. Ini membuat pembuatan komponen React menjadi lebih intuitif. React menggunakan konsep Virtual DOM untuk meningkatkan kinerja. Virtual DOM adalah representasi virtual dari DOM yang sebenarnya. React mengelola keadaan (state) komponen dan properti (props) yang dilewatkan ke komponen. State adalah data yang dapat berubah, sedangkan props adalah data yang tidak berubah yang diteruskan dari komponen lain.</li>
+    <li>Router React memungkinkan pengembang untuk mengatur perutean (routing) dalam aplikasi sehingga pengguna dapat berpindah antara halaman atau tampilan tanpa perlu memuat ulang seluruh halaman. Hooks adalah fitur baru dalam React yang memungkinkan penggunaan state dan fungsi React lainnya dalam komponen fungsi. React tidak memiliki sistem styling bawaan, tetapi pengembang dapat memilih dari berbagai pendekatan seperti CSS-in-JS, CSS Modules, atau kerangka kerja styling pihak ketiga.</li>
+</ul>

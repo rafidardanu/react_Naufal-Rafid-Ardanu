@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="assets/styleCP.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top pt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#"><strong>Simple Header</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav pe-4">
+                <li class="nav-item">
+                <a class="nav-link home-bg me-3" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link me-3" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link me-3" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link me-3" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Container -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="main-content text-center">
+                    <img src="assets/logobs.png" alt="">
+                    <h1>Create Product</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, saepe.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolore ea quae debitis ut tenetur rem odio quidem eligendi animi!</p>
+                </div>
+                
+                <!-- Form -->
+                <div class="form mb-3">
+                    <div>
+                        <h2>Detail Product</h2>
+                    </div>
+                    <div class="prodName mb-3">
+                        <label>Product Name:<span class="required">*</span></label>
+                        <input type="text" class="form-control" pattern=".{1,25}" required>
+                        <span id="nameError" class="text-danger"></span>
+                    </div>
+                    <div class="prodCategory mb-3">
+                        <label>Product Category:<span class="required">*</span></label>
+                        <select class="form-select">
+                            <option disabled selected value="">Choice</option>
+                            <option value="Electronic">Electronic</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Foods">Foods</option>
+                            <option value="Home Appliances">Home Appliances</option>
+                            <option value="Kids">Kids & Baby</option>
+                        </select>
+                        <span id="categoryError" class="text-danger"></span>
+                    </div>
+                    <div class="prodFreshness mb-3">
+                        <label class="form-label">Product Freshness:<span class="required">*</span></label><br>
+                        <input id="or1" class="form-check-input" type="radio" name="Freshness" required><label for="" class="form-check-label ps-2">Brand New</label><br>
+                        <input id="or2" class="form-check-input" type="radio" name="Freshness" required><label for="" class="form-check-label ps-2">Second Hand</label><br>
+                        <input id="or3" class="form-check-input" type="radio" name="Freshness" required><label for="" class="form-check-label ps-2">Refurbished</label><br>
+                        <span id="freshnessError" class="text-danger"></span>
+                    </div>
+                    <div class="divImgProd mb-3">
+                        <label for="formFile" class="form-label">Image of Product<span class="required">*</span></label>
+                        <input id="imgProd" class="form-control" type="file" required>
+                        <span id="fileError" class="text-danger"></span>
+                    </div>
+                    <div class="addDesc mb-3">
+                        <label>Additional Description:<span class="required">*</span></label>
+                        <textarea id="textDesc" class="form-control" required></textarea>
+                        <span id="descError" class="text-danger"></span>
+                    </div>
+                    <div class="prodPrice mb-3">
+                        <label class="form-label">Product Price:<span class="required">*</span></label>
+                        <input class="form-control" type="number" placeholder="$1" pattern="\d+" required>
+                        <span id="priceError" class="text-danger"></span>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                        <button type="button" id="submitButton" class="btn btn-primary" onclick="validateWeb()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="mt-5 tabel">
+        <h3 style="text-align: center; color: black;">List Product</h3>
+        <table class="form container table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Category</th>
+                    <th>Product Freshness</th>
+                    <th>Image of Product</th>
+                    <th>Additional Description</th>
+                    <th>Product Price</th>
+                </tr>
+            </thead>
+            <tbody id="bodyData"></tbody>
+        </table>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <!-- Script Tugas JS -->
+    <script src="assets/scriptCP.js"></script>
+</body>
+</html>
