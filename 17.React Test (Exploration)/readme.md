@@ -1,0 +1,7 @@
+<h1 align = "center"><b>Resume Section17 (React Testing)</b></h1>
+
+<ul>
+    <li>Testing adalah proses memverifikasi bahwa test assertions kita benar. Test assertion ini adalah ekspresi boolean yang mengembalikan nilai true kecuali ada bug di kode kita. Pengujian dasar adalah praktik pengujian perangkat lunak yang bertujuan untuk memastikan bahwa komponen atau fungsi React berfungsi seperti yang diharapkan. Ini melibatkan penggunaan alat pengujian seperti React Testing Library (RTL) atau Jest untuk membuat skenario pengujian dan menguji komponen React.</li>
+    <li>Fungsi render dalam React Testing Library (RTL) digunakan untuk merender berkas JSX yang diperlukan dalam pengujian. Setelah proses render selesai, kita dapat mengakses komponen React yang ingin diuji. Agar dapat memastikan bahwa berkas JSX telah terrender dengan benar, kita dapat menggunakan fungsi debug dalam RTL. Penting untuk selalu menggunakan fungsi debug saat kita merasa tidak yakin tentang hasil dari fungsi render RTL. Untuk membuat pengujian dasar dengan RTL, Anda dapat membuat berbagai tes untuk mengkonfirmasi perilaku dan tampilan komponen React.</li>
+    <li>Custom hooks adalah fungsi khusus dalam React yang dapat digunakan kembali dalam berbagai komponen. Pengujian custom hooks melibatkan pengujian fungsi-fungsi ini untuk memastikan bahwa mereka mengembalikan hasil yang benar dan berfungsi seperti yang diharapkan dalam berbagai skenario.</li>
+</ul>
