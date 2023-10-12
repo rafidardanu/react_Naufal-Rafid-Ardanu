@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+* {
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+}
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    background-color: #0b9b8a;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-logo {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+}
+.nav-judul {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+.navigasi .nav-link {
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.navigasi .nav-link:hover {
+    color: #ff5e0b;
+}
+.navbar-toggler {
+    border: none;
+    padding: 12px;
+}
+#projects {
+    padding: 150px 0px;
+}
+
+.our-project > h1{
+    font-size: 16px;
+    color: #050608;
+}    
+
+.our-project > p {
+    font-size: 14px;
+    color: #999aa4;
+}
+.col-lg-4:nth-child(4) {
+    margin-top: 20px;
+}
+#contact {
+    margin-top: 100px;
+}
+
+#footer {
+    margin-top: 170px;
+    padding-top: 15px;
+}
+.email {
+    text-decoration: none;
+}

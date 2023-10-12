@@ -1,0 +1,41 @@
+#root {
+    margin: auto;
+}
+.container-fluid{
+    padding-bottom: 10px;
+}
+.nav-item .nav-link{
+    color: #0B5ED7;
+}
+.home-bg{
+    background-color: #0B5ED7 !important;
+    border-radius: 8px;
+    color: white !important;
+}
+.main-content {
+    margin: 74px 0px;
+}
+.main-content img {
+    height: 100px
+}
+.form-cp {
+    padding: 0px 150px;
+}
+input[type="file"]::file-selector-button{
+    background-color: #0B5ED7;
+    color: aliceblue;
+}
+.divImgProd input:hover {
+    border: solid 1px blue;
+    color: black;
+}
+.addDesc textarea {
+    padding-bottom: 100px !important;
+}
+.required {
+        color: red;
+        margin-left: 5px;
+    }
+.tabel {
+    margin-bottom: 100px;
+}
