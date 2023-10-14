@@ -1,0 +1,1 @@
+[Link GDoc Jawaban Intro React OpenAI](https://docs.google.com/document/d/11eFjpRwGlqmSE9sdxzv5QVZhbFaXMORT3LL6V3AIy30/edit?usp=sharing)
