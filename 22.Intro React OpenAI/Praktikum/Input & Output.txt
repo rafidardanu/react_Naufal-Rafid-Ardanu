@@ -1,0 +1,37 @@
+Input: You will be provided with a piece of Python code, and your task is to provide ideas for efficiency improvements.
+
+User: 
+from typing import List            
+def has_sum_k(nums: List[int], k: int) -> bool:
+    """
+    Returns True if there are two distinct elements in nums such that their sum 
+    is equal to k, and otherwise returns False.
+    """
+    n = len(nums)
+    for i in range(n):
+        for j in range(i+1, n):
+            if nums[i] + nums[j] == k:
+                return True
+    return False
+
+Assistant:
+One possible improvement is to use a set to store the elements of `nums` as we iterate through the list. This will allow us to check if `k - nums[i]` exists in constant time, rather than iterating through the list again.
+Here's an updated version of the code with this improvement:
+
+```python
+from typing import List
+
+def has_sum_k(nums: List[int], k: int) -> bool:
+    """
+    Returns True if there are two distinct elements in nums such that their sum 
+    is equal to k, and otherwise returns False.
+    """
+    num_set = set()
+    for num in nums:
+        if k - num in num_set:
+            return True
+        num_set.add(num)
+    return False
+```
+
+This updated code has a time complexity of O(n), where n is the length of `nums`.
